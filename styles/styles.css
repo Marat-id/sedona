@@ -56,12 +56,38 @@ font-face {
 {
   flex-grow: 1;
 }
+
+.navigetion a.active::after
+{
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #756257;
+  position: absolute;
+  bottom: -1px;
+
+
+}
+
+.page-header
+{
+  height: 64px;
+}
+
+.navigetion-link-logo
+{
+  margin-left: 70px;
+  display: flex;
+  z-index: 2;
+}
+
   .navigetion
 {
   display: flex;
    width: 1200px;
   margin: 0 auto;
-  height: 64px;
+
 }
 
 .index-back
@@ -69,6 +95,7 @@ font-face {
 display: block;
 margin: 0 auto;
 padding-top: 51px;
+z-index: 1;
 }
 
 
@@ -76,8 +103,7 @@ padding-top: 51px;
 {
 
   display: flex;
-
-   width: 632px;
+  width: 632px;
   margin: 0;
   list-style-type: none;
   flex-wrap: wrap;
@@ -96,6 +122,7 @@ text-align: center;
 background-color: #FFFFFF;
 text-decoration: none;
 text-transform: uppercase;
+position: relative
 }
 .navigetion-user .navigetion-link-user
 {
@@ -109,10 +136,10 @@ text-transform: uppercase;
 {
 max-width: 280px;
 display: flex;
-list-style-type: none;
 gap: 20px;
- margin-left: 70px;
- align-items: center;
+margin-right: 70px;
+align-items: center;
+
 }
 
 .page-contaneir
@@ -156,8 +183,9 @@ padding-top: 69px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  width: 650px;
   height: 72px;
+  text-transform: uppercase;
+
 
 }
 .grand
@@ -216,8 +244,15 @@ font-family: "PT Sans", sans-serif;
 font-size: 30px;
 line-height: 36px;
 font-weight: 700;
-width: 505px;
+width: 570px;
 height: 72px;
+text-transform: uppercase;
+
+}
+.icon-z
+{
+  text-transform: uppercase;
+
 }
 
 .personal
@@ -273,6 +308,8 @@ height: 108;
   box-sizing: border-box;
   padding: 8px;
   width: 160px;
+
+
 }
 
 
@@ -352,7 +389,6 @@ border: 2px solid #E5E5E5;
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid #7DB54F;
-
   border-radius: 4px;
   }
 
@@ -540,6 +576,7 @@ justify-content: center;
   font-weight: 700;
   width: 297px;
   height: 36px;
+  text-transform: uppercase;
 
 }
 .line1
@@ -568,8 +605,8 @@ justify-content: center;
   width: 376px;
   height: 52px;
   margin-top: 54px;
-
-}
+  cursor: pointer;
+ }
 
 .subscription
 {
@@ -591,6 +628,8 @@ justify-content: center;
   font-weight: 700;
   width: 404px;
   height: 36px;
+  text-transform: uppercase;
+
 }
 .scout
 {
@@ -610,7 +649,6 @@ justify-content: center;
 {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
-  line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: white;
@@ -621,20 +659,23 @@ justify-content: center;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   width: 232px;
-  height: 60px;
-
+  cursor: pointer;
+  padding-left: 50px;
+  padding-top:8px ;
+  padding-bottom: 8px ;
+ padding-right: 50px;
 }
 .field
 {
   width: 452px;
-  height: 34px;
-  border-top-left-radius: 4px;
+   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-padding-top: 12px;
-padding-right: 20px;
-padding-bottom: 12px;
-padding-left: 20px;
-border: 1px solid #ccc;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+   padding-left: 20px;
+  border: 1px solid #ccc;
+
 }
 
 .page-footer-contanier
@@ -642,16 +683,23 @@ border: 1px solid #ccc;
 display: flex;
 width: 1200px;
 margin: 0 auto;
-}
+ align-items: center;
+ justify-content: center;
 
+}
+.field:focus-visible
+{
+  outline: 2px solid #82B3D3;
+}
 .footer-social-list
 {
   width: 142px;
 margin-right: 41px;
 display: flex;
 list-style-type: none;
-margin-top: 45px;
-
+margin-top: 35px;
+margin: 0;
+padding: 0;
 }
 .footer-contacts
 {
@@ -671,8 +719,7 @@ margin-top: 45px;
 .footer-academya
 {
   width: 115px;
-  margin-right: 70px;
-  margin-top: 35px;
+
 }
 
 .page-footer-tittle
