@@ -9,12 +9,10 @@
 <body>
     <header class="page-header">
       <nav class="navigetion">
-        <ul class="navigetion-list">
-          <li class="navigetion-item-logo">
-            <a  class="navigetion-link-logo"  href="https://htmlacademy.ru/">
+         <a  class="navigetion-link-logo"  href="https://htmlacademy.ru/">
             <img class="logo" src="./img/Frame 19.svg" width="140" height="70px"  alt="Логотип Sedon">
             </a>
-           </li>
+           <ul class="navigetion-list">
             <li  class="navigetion-item">
         <a  class="navigetion-link"  href="index.html">Главная</a>
         </li>
@@ -25,22 +23,16 @@
         <a  class="navigetion-link"  href="catalog.html">Гостиницы</a>
          </li>
         </ul>
-        <ul class="navigetion-user">
-        <li  class="navigetion-item-user">
-        <a  class="navigetion-link-user"  href="#">
+        <div class="navigetion-user">
+            <a  class="navigetion-link-user"  href="#">
           <img src="img/search.svg" width="20" height="20" alt="поиск">
           </a>
-        </li>
-        <li  class="navigetion-item-user">
-        <a class="navigetion-link-user"  href="#">
+           <a class="navigetion-link-user"  href="#">
           <img src="img/heart.svg" width="20" height="20" alt="избранное">
          </a>
-        </li>
-        <li  class="navigetion-item-user">
-             <a class="navigetion-link-user user-button"  href="#">Хочу сюда!</a>
-         </li>
-        </ul>
-         </nav>
+       <a class="navigetion-link-user user-button"  href="#">Хочу сюда!</a>
+        </div>
+        </nav>
      </header>
      <main class="main-inner main-contanier">
       <div class="page-contaneir">
@@ -55,7 +47,7 @@
         </li>
         </ul>
           <section class="catalog-hotels">
-            <h2 class="visually-hidden" hidden>Список отелей с фильтрами </h2>
+            <h2 class="visually-hidden">Список отелей с фильтрами </h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/"
             method="get">
             <fieldset class="catalog-filter-group">

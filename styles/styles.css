@@ -57,6 +57,7 @@ font-face {
   flex-grow: 1;
 }
 
+
 .navigetion a.active::after
 {
   content: '';
@@ -73,6 +74,9 @@ font-face {
 .page-header
 {
   height: 64px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
 }
 
 .navigetion-link-logo
@@ -290,7 +294,6 @@ text-transform: uppercase;
 {
 color: white;
 width: 475;
-height: 108;
 }
 .user-button
 {
@@ -311,8 +314,6 @@ height: 108;
 
 
 }
-
-
 
 .inner-header-tittle
 {
@@ -611,13 +612,13 @@ justify-content: center;
 .subscription
 {
   width: 1200px;
-  height: 414px;
   background-color: #83B3D31F;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 .newsletter
@@ -626,8 +627,6 @@ justify-content: center;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  width: 404px;
-  height: 36px;
   text-transform: uppercase;
 
 }
@@ -637,12 +636,14 @@ justify-content: center;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  width: 500px;
-  height: 53px;
+   max-width: 500px;
+
+
 }
 .news-letter-form
 {
   display: flex;
+
 }
 
 .newsletter-button00
