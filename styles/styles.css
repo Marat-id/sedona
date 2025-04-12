@@ -1,4 +1,4 @@
-font-face {
+@font-face {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -6,34 +6,34 @@ font-face {
      font-display: swap;
   }
 
-  font-face {
+  @font-face {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    src: url(../fonts/PTSans-bold.woff2) format(woff2);
+    src: url(../fonts/PTSans-Bold.woff2) format(woff2);
     font-display: swap;
   }
 
-  .font-face {
+  @font-face {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-style: italic;
-    src: url(../fonts/PTSans-italoc.woff2) format(woff2);
+    src: url(../fonts/PTSans-Italic.woff2) format(woff2);
     font-display: swap;
   }
 
-  font-face  {
+  @font-face  {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: italic;
-    src: url(../fonts/PTSansNarrow-bold.woff2) format(woff2);
+    src: url(../fonts/PTSansNarrow-Bold.woff2) format(woff2);
     font-display: swap;
   }
-  .font-face   {
+  @font-face  {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-style: normal;
-    src: url(../fonts/PTSansNarrov-reqular.woff2) format(woff2);
+    src: url(../fonts/PTSansNarrow-Reqular.woff2) format(woff2);
     font-display: swap;
   }
   body {
