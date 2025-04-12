@@ -43,7 +43,7 @@
             <a class="breadcrumbs-list" Class="visually-hidden" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-            <a class="breadcrumbs-list">Каталог</a>
+            <a class="breadcrumbs-list">Гостиницы</a>
         </li>
         </ul>
           <section class="catalog-hotels">
@@ -54,7 +54,7 @@
          <legend class="catalog-filter-tittle">Инфаструктура:</legend>
          <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
-         <label class="control">
+              <label class="control">
             <input class="control-input" type="checkbox" name="swimming pool" checked>
             Бассейн
          </li>
@@ -97,12 +97,16 @@
                  </label>
                  </ul>
                 </fieldset>
-        <button class="button" type="submit">Применить</button>
-        <button class="button" type="reset">сбросить</button>
-       </form>
+                <div class="button-p">
+        <button class="button-apply" type="submit">Применить</button>
+        <button class="button-reset" type="reset">сбросить</button>
       </div>
-      <div class="catalog-right-column">
-       <h2 class="hotels found">Найдено гостиниц:38</h2>
+       </form>
+          </div>
+        </section>
+        <section class="catalog-right-column">
+      <div class="filter-icon">
+       <h2 class="hotels-found">Найдено гостиниц:38</h2>
       <select class="select-conrol" aria-label="Сортировка">
        <option value="cheap">Сначала дешевые</option>
        <option value="popular">Сначала популярное</option>
@@ -111,56 +115,65 @@
       <a href="#" class="button button-light">
         <span class="visually-hidden">Показать список</span>
       </a>
-      <a href="#" class="button">
+      <a href="#" class="button button-light">
         <span class="visually-hidden">Показать карточки</span>
       </a>
+      </div>
       <ul class="product-list">
-      <li clas="product-cart">
-      <a class="product-cart-link" href="product.html">
+       <li class="product-cart">
+        <div class="product-cart-content">
+        <a class="product-cart-link" href="product.html">
         <img class="product-cart-image" src="img/hotel-1.jpg" width="300" height="212" alt="вид из ущелья на звездное небо">
           <h3 class="product-cart-tittle">Amara Resort & Spa</h3>
         </a>
-        <span>Гостиница</span>
-        <b class="product-cart-price">от 4000р</b>
-       <a class="product-cart-detailed-button" href="#">Подробнее</a>
+         <p class=hostel>Гостиница</p>
+        <p class="product-cart-price">от 4000р</p>
+        <a class="product-cart-detailed-button" href="#">Подробнее</a>
        <a class="product-cart-favourites-button" href="#">В избранное</a>
-        <span class="product-cart-rating">Рейтинг:8,5</span>
-       </li>
-       <li clas="product-cart">
+
+      <span class="product-cart-rating">Рейтинг:8,5</span>
+      </li>
+          <li class="product-cart">
+            <div class="product-cart-content">
         <a class="product-cart-link" href="product.html">
           <img class="product-cart-image" src="img/hotel-2.jpg" width="300" height="212" alt="вид на небо и горы после дождя">
             <h3 class="product-cart-tittle">Villas at Poco Diablo</h3>
           </a>
-          <span>Гостиница</span>
-          <b class="product-cart-price">от 5000р</b>
+          <span class=hostel>Гостиница</span>
+          <p class="product-cart-price">от 5000р</p>
          <a class="product-cart-detailed-button" href="#">Подробнее</a>
-         <a class="product-cart-favourites-button" href="#">В избранном</a>
+         <a class="product-cart-favourites-button1" href="#">В избранном</a>
           <span class="product-cart-rating">Рейтинг:9,2</span>
+          </div>
          </li>
-         <li clas="product-cart">
+         <li class="product-cart">
+          <div class="product-cart-content">
           <a class="product-cart-link" href="product.html">
             <img class="product-cart-image" src="img/hotel-3.jpg" width="300" height="212" alt="вид на горы и восход солца">
               <h3 class="product-cart-tittle">Desert Quail Inn</h3>
             </a>
-            <span>Гостиница</span>
-            <b class="product-cart-price">от 2500р</b>
-           <a class="product-cart-detailed-button" href="#">Подробнее</a>
+            <span class=hostel>Гостиница</span>
+            <p class="product-cart-price">от 2500р</p>
+            <a class="product-cart-detailed-button" href="#">Подробнее</a>
            <a class="product-cart-favourites-button" href="#">В избранное</a>
             <span class="product-cart-rating">Рейтинг:6,9</span>
+            <div class="product-cart-content">
            </li>
-           <li clas="product-cart">
+           <li class="product-cart">
+            <div class="product-cart-content">
             <a class="product-cart-link" href="product.html">
               <img class="product-cart-image" src="img/hotel-4.jpg"  width="300" height="212"  alt="вид на ночные горы">
                 <h3 class="product-cart-tittle">GreenTree Inn</h3>
               </a>
-              <span>Гостиница</span>
-              <b class="product-cart-price">от 1500р</b>
+              <span class=hostel>Гостиница</span>
+              <p class="product-cart-price">от 1500р</p>
              <a class="product-cart-detailed-button" href="#">Подробнее</a>
              <a class="product-cart-favourites-button" href="#">В избранное</a>
               <span class="product-cart-rating">Рейтинг:5,0</span>
-             </li>
             </div>
-      </ul>
+             </li>
+        </ul>
+
       <ul class="pagination">
        <li class="pagination-item">
         <a class="pagination-link-a">1</a>
@@ -175,19 +188,22 @@
         <a class="pagination-link" href="#">4</a>
        </li>
        <li class="pagination-item">
-        <a class="pagination-link" href="#">...</a>
+        <a class="pagination-link-a" href="#">...</a>
        </li>
        <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
        </li>
       </ul>
-        </section>
-        <h3>Подпишитесь на рассылку</h3>
-       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-       <Form class="news-letter-form" action="https://htmlacademy.ru/" method="post">
+      <section class="subscription-inner">
+        <h3 class="newsletter">Подпишитесь на рассылку</h3>
+       <p class="scout">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+     <Form class="news-letter-form" action="https://htmlacademy.ru/" method="post">
        <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
      <button class="button newsletter-button00" type="submit">
-        <span class="visually-hidden">Подписаться</span>
+     <span class="">Подписаться</span>
+     </button>
+     </Form>
+     </section>
      </div>
       </main>
       <footer class="page-footer">
