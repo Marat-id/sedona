@@ -886,29 +886,29 @@ padding: 0;
   display: block;
   width: 24px;
   height: 24px;
- background-repeat: no-repeat;
-background-position: center;
+ mask-repeat: no-repeat;
+mask-position: center;
   padding: 12px 13px;
 
 
 }
 
 .footer-social-vk {
- background-image: url("../img/vk.svg");
- background-size: 24px 14px;
-
+ mask-image: url("../img/vk.svg");
+ mask-size: 24px 14px;
+ background-color: #83B3D3;
 }
 
 .footer-social-tg {
-  background-image: url("../img/tg.svg");
-  background-size: 18px 15px;
-
+  mask-image: url("../img/tg.svg");
+  mask-size: 18px 15px;
+  background-color: #83B3D3;
 }
 
 .footer-social-yutube {
- background-image: url("../img/youtube.svg");
- background-size: 22px 17px;
-
+ mask-image: url("../img/youtube.svg");
+ mask-size: 22px 17px;
+background-color: #83B3D3;
 }
 
 .footer-contacts
