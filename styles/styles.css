@@ -110,6 +110,7 @@
 .user-button:hover
 {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .user-button:focus
@@ -121,6 +122,7 @@
 .hotel-button:hover
 {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .hotel-button:focus
@@ -132,11 +134,13 @@
 .newsletter-button00:hover
 {
   background-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .newsletter-button00:focus
 {
   background-color: #68A2CA;
+  border-color: #68A2CA;
   outline: none;
 }
 
@@ -148,27 +152,32 @@
 {
 background-color: #756157;
 outline: none;
+border-color: #756157
 }
 
 .pagination-link:hover
 {
   background-color: #68A2CA;
+  border-color: #68A2CA;
 }
 
 .pagination-link:focus
 {
   background-color: #82B3D3;
+  border-color: #68A2CA;
 outline: none;
 }
 
 .product-cart-detailed-button:hover
 {
   background-color: #615048;
+  border-color: #615048;
 }
 
 .product-cart-detailed-button:focus
 {
   background-color: #615048;
+  border-color: #615048;
   outline: none;
 }
 
@@ -235,13 +244,13 @@ z-index: 1;
 padding: 20px 16px;
 display: block;
 font-family: "PT Sans", sans-serif;
+font-size: 20px;
 line-height: 24px;
 color: black;
 font-weight: 700;
 text-align: center;
 background-color: #FFFFFF;
 text-decoration: none;
-text-transform: uppercase;
 position: relative
 }
 .navigetion-user .navigetion-link-user
@@ -530,6 +539,28 @@ top: -8px;
 padding: 12px 20px;
 width: 110px;
 
+}
+
+.input-text-o
+{
+  background-image: url(../img/ot.svg);
+  background-size: 17px 24px;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  border: none;
+  border-top-left-radius: 4px ;
+  border-bottom-left-radius: 4px ;
+}
+.input-text-d
+{
+  background-image: url(../img/do.svg);
+  background-size: 20px 24px;
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: 2px;
+  border-top-right-radius: 4px ;
+  border-bottom-right-radius: 4px ;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1219,6 +1250,7 @@ justify-content: space-between;
   border-radius: 4px;
   padding: 8px 22px;
   margin-top: 16px;
+  text-transform: uppercase
 
 
 }
@@ -1464,7 +1496,7 @@ overflow: hidden;
 
 .data-tittle-children
 {
- margin-left: 88px;
+ margin-left: 82px;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -1521,7 +1553,7 @@ display: block;
   width: 256px;
   position: absolute;
   top: 100%;
-  margin-top: 6px;
+  margin-top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1556,5 +1588,5 @@ margin-right: auto;
 
 .modal-contanier-close
 {
-  display: none;
+display: none;
 }
